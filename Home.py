@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-import joblib #to load the recommendation model
+
 import pickle
 from sklearn.metrics.pairwise import cosine_similarity
 
