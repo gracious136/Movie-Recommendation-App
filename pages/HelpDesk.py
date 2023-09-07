@@ -3,7 +3,6 @@ st.set_page_config(page_title='SMG Movies', page_icon ="🎬", layout="centered"
 
 st.title("SMG HelpDesk")
 
-openai.api_key = "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"
 st.chat_message("user", avatar = "😎").markdown("Welcome to SMG Movies, I am SeGreLa. How can i help you today?")
 
 responses = {
