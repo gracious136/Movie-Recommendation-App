@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-
+import requests
 import pickle
 import sklearn
 from sklearn.metrics.pairwise import cosine_similarity
@@ -19,7 +19,26 @@ df = pd.read_csv('https://raw.githubusercontent.com/gracious136/Movie-Recommenda
 df['title']= df['Title']
 df.drop('Title', axis =1, inplace=True)
 
-movie_model =pickle.load(open('https://github.com/gracious136/Movie-Recommendation-App/blob/main/data/movie_model.sav', 'rb'))
+# Define the URL of the model file
+model_url = 'https://github.com/gracious136/Movie-Recommendation-App/raw/main/data/movie_model.sav'
+
+# Use requests to fetch the model from the URL
+response = requests.get(model_url)
+
+# Check if the request was successful
+if response.status_code == 200:
+    # Create a binary stream from the response content
+    model_stream = response.content
+    
+    # Use pickle to load the model from the binary stream
+    movie_model = pickle.loads(model_stream)
+
+    # Now, you can use 'movie_model' as your loaded model
+else:
+    # Handle the case where the request to fetch the model was unsuccessful
+    st.error("Failed to fetch the model")
+
+#movie_model =pickle.load(open('https://github.com/gracious136/Movie-Recommendation-App/blob/main/data/movie_model.sav', 'rb'))
 
 movie_ratings = movies.merge(ratings, how = 'inner', on = 'movieId')
 
