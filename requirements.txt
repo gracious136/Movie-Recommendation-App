@@ -1,4 +1,4 @@
-aiofiles @ file:///C:/b/abs_9ex6mi6b56/croot/aiofiles_1683773603390/work
+aiofiles==0.7.0
 aiohttp @ file:///C:/ci_311/aiohttp_1676432932774/work
 aiosignal @ file:///tmp/build/80754af9/aiosignal_1637843061372/work
 aiosqlite @ file:///C:/b/abs_9djc_0pyi3/croot/aiosqlite_1683773915844/work
@@ -121,7 +121,6 @@ rfc3339-validator @ file:///C:/b/abs_ddfmseb_vm/croot/rfc3339-validator_16830770
 rfc3986-validator @ file:///C:/b/abs_6e9azihr8o/croot/rfc3986-validator_1683059049737/work
 rich==13.5.2
 rpds-py==0.10.2
-scikit-learn @ file:///C:/b/abs_55olq_4gzc/croot/scikit-learn_1690978955123/work
 scikit-learn==1.3.0
 scikit-surprise==1.1.3
 scipy==1.11.1
