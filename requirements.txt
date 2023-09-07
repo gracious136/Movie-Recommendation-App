@@ -121,6 +121,7 @@ rfc3986-validator @ file:///C:/b/abs_6e9azihr8o/croot/rfc3986-validator_16830590
 rich==13.5.2
 rpds-py==0.10.2
 scikit-learn @ file:///C:/b/abs_55olq_4gzc/croot/scikit-learn_1690978955123/work
+scikit-learn==1.3.0
 scikit-surprise==1.1.3
 scipy==1.11.1
 seaborn @ file:///C:/ci_311/seaborn_1676446547861/work
