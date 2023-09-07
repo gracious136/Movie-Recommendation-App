@@ -19,7 +19,7 @@ df = pd.read_csv('https://raw.githubusercontent.com/gracious136/Movie-Recommenda
 df['title']= df['Title']
 df.drop('Title', axis =1, inplace=True)
 
-movie_model =pickle.load(open('https://github.com/gracious136/Movie-Recommendation-App/raw/main/data/movie_model.sav', 'rb'))
+movie_model =pickle.load(open('https://github.com/gracious136/Movie-Recommendation-App/blob/main/data/movie_model.sav', 'rb'))
 
 movie_ratings = movies.merge(ratings, how = 'inner', on = 'movieId')
 
