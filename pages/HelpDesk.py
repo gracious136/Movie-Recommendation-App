@@ -3,16 +3,19 @@ st.set_page_config(page_title='SMG Movies', page_icon ="🎬", layout="centered"
 
 st.title("SMG HelpDesk")
 
-st.chat_message("user", avatar = "😎").markdown("Welcome to SMG Movies, I am SeGreLa. How can i help you today?")
+st.chat_message("user", avatar = "😎").markdown("Welcome to SMG Movies How can i help you today?")
 
 responses = {
     "What is your name?": "I am SeGreLa, your movie recommendation assistant.",
     "hi": "Hi, i am SeGreLa, your movie recommendation assistant.",
+    "Hi": "Hi, i am SeGreLa, your movie recommendation assistant.",
     "hey": "Hi, i am SeGreLa, your movie recommendation assistant.",
     "hello": "Hi, i am SeGreLa, your movie recommendation assistant.",
+    "Hello": "Hi, i am SeGreLa, your movie recommendation assistant.",
     "what is your name?": "I am SeGreLa, your movie recommendation assistant.",
     "what is your name": "I am SeGreLa, your movie recommendation assistant.",
     "How does the recommendation work?": "I use a sophisticated algorithm to analyze your preferences and suggest movies that you might like. All you need to do i select a movie that you liked from our list and we will recommend movies that we think you will enjoy.",
+    "how does the recommendation work": "I use a sophisticated algorithm to analyze your preferences and suggest movies that you might like. All you need to do i select a movie that you liked from our list and we will recommend movies that we think you will enjoy.",
     "How do i get a membership number" : "When you sign up with SMG, you will be assigned a memebership number that will be used to tailor personalized recommendations just for you"
 }
 
