@@ -127,14 +127,16 @@ def get_recommendation(model, user_id, movie_ids, n=7):
 # Define the URL of the video file
 video_url = 'https://github.com/gracious136/Movie-Recommendation-App/raw/main/data/welcome_video.mp4'
 
-
+gif_url = 'https://github.com/gracious136/Movie-Recommendation-App/raw/main/data/welcomee.gif'
 
 
 
 
 def app_interaction():
+
+    st.image(gif_url, format='image/gif')
    # Use the st.video function to display the video
-    st.video(video_url)
+    #st.video(video_url)
     # st.title('Welcome to SMG Movies')
 
     with st.expander('Search details'):
