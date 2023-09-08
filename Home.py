@@ -93,7 +93,7 @@ def related_movies(title):
 
     no_of_rating_for_both_movies = [sum((movie_matrix[movie_id] > 0) & (movie_matrix[movie_id])) for movie_ids in movie_df.index]
     movie_df['common_movie_raters'] = no_of_rating_for_both_movies 
-    results = movie_df[movie_df['common_movie_raters']>=3].reset_index()\
+    results = movie_df[movie_df['common_movie_raters']>=6].reset_index()\
                 .merge(movie_ratings, how='inner', on ='movieId')\
                 .groupby(['movieId','title']).agg({'rating':'mean', 'common_movie_raters' : 'sum'}).reset_index()\
                 .sort_values(by=['rating', 'common_movie_raters'], ascending=[False, False]).head(35).merge(df, how = 'inner', on = 'title')
