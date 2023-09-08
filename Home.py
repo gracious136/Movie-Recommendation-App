@@ -125,8 +125,8 @@ def get_recommendation(model, user_id, movie_ids, n=7):
         
         
 # Define the URL of the video file
-video_url = 'https://github.com/gracious136/Movie-Recommendation-App/raw/main/data/welcome_video.mp4'
-
+video_url = 'https://github.com/gracious136/Movie-Recommendation-App/raw/main/data/welcome_music.mp4'
+#https://github.com/gracious136/Movie-Recommendation-App/blob/main/data/welcome_music.mp4
 #gif_url = 'https://github.com/gracious136/Movie-Recommendation-App/blob/main/data/welcomee.gif'
 
 
