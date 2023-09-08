@@ -124,6 +124,8 @@ def get_recommendation(model, user_id, movie_ids, n=7):
     return top_recommendations[['movieId', 'title']].merge(df, how='inner', on='title').head(5)
         
         
+# Define the URL of the video file
+video_url = 'https://github.com/gracious136/Movie-Recommendation-App/raw/main/data/welcome_video.mp4'
 
 
 
@@ -131,7 +133,9 @@ def get_recommendation(model, user_id, movie_ids, n=7):
 
 
 def app_interaction():
-    st.title('Welcome to SMG Movies')
+   # Use the st.video function to display the video
+    st.video(video_url)
+    # st.title('Welcome to SMG Movies')
 
     with st.expander('Search details'):
         user = st.number_input('Please enter your membership number', value =1)
