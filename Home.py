@@ -136,7 +136,7 @@ def app_interaction():
 
   #  st.image(gif_url, format='image/gif')
    # Use the st.video function to display the video
-   st.video(video_url, start_time=0)
+    st.video(video_url, start_time=0)
     # st.title('Welcome to SMG Movies')
 
     with st.expander('Search details'):
