@@ -8,7 +8,14 @@ st.title('Meet the Creators of SGM Movies')
 
 #with col1:
 st.header("Sebastian")
-st.image("https://github.com/gracious136/Movie-Recommendation-App/blob/main/data/seba.jpg")#, output_format ='png')
+
+
+image_url = 'https://github.com/gracious136/Movie-Recommendation-App/raw/main/data/seba.png'
+
+# Display the image
+st.image(image_url, format='image/png')
+
+#st.image("https://github.com/gracious136/Movie-Recommendation-App/blob/main/data/seba.jpg")#, output_format ='png')
 st.write('''
    Sebastian is a Junior Data Analyst and a valuable member of the team who contributes greatly to work culture. He is positive and brings this to every project and meeting. His journey into the world of data science is a unique one, having embarked on this path later in life after a successful career running businesses. This background has given Sebastian an all-round business acumen, allowing him to possess an in-depth  understanding of how businesses operate from the ground up.
 His ability to bridge different departments and manage collaborations with contractors is a testament to his exceptional leadership and teamwork skills. He seamlessly integrates the data science domain with various aspects of business operations, ensuring that projects align with overarching business goals.
