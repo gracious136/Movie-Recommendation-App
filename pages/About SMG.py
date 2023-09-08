@@ -4,8 +4,16 @@ st.set_page_config(page_title='SMG Movies', page_icon ="🎬", layout="centered"
 st.title('About SMG Movies')
 
 st.write('''
+SMG Movies is a unique and niche recommendation company on a mission to curate thought-provoking and captivating viewing options for a discerning clientele. In a world saturated with predictable and formulaic content, SMinG Movies stands out by focusing on delivering, innovative, and exciting choices which are always interesting, sometimes evocative, and even provocative. 
+We understand that quality often comes at a price, and our commitment is not to be the cheapest option but to be the most interesting. Our dedication to this principle drives us to employ and continually refine a state-of-the-art recommender system that is custom-built to cater to the specific tastes of our audience.
+At SMG we pride ourselves on our unique approach to data. While our datasets may not be the largest in the industry, they represent a community of users who demand more from their entertainment. Our dynamic model is steadily expanding, adapting, and learning from our users' preferences and choices. We believe that it's not just about the quantity of data but the quality and relevance of the recommendations we provide. 
 
-Our website is proud to introduce a simple Movie Recommender System that aims to enhance your entertainment experience. 
+With SMG Movies you can expect an exceptional and tailored cinematic experience that goes beyond the mainstream. Don't spend your time scrolling spend it immersed in exciting and entertaining movies. ''')
+
+st.title('How it Works')
+
+st.write('''
+
 We understand that choosing the perfect movie can be challenging with the vast selection available today. Our recommender system leverages advanced algorithms and user data to curate personalized movie recommendations tailored just for you.
 
 Key Features:
