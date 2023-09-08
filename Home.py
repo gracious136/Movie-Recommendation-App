@@ -96,7 +96,7 @@ def related_movies(title):
     results = movie_df[movie_df['common_movie_raters']>0].reset_index()\
                 .merge(movie_ratings, how='inner', on ='movieId')\
                 .groupby(['movieId','title']).agg({'rating':'mean', 'common_movie_raters' : 'mean'}).reset_index()\
-                .sort_values(by='rating', ascending= False).head(35).merge(df, how = 'inner', on = 'title')
+                .sort_values(by='rating', ascending= False).head(70).merge(df, how = 'inner', on = 'title')
 
     results['rating'] = round(results['rating'], 1)
     return results[['title','rating', 'Poster']].head(5)
