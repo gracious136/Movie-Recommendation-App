@@ -95,8 +95,8 @@ def related_movies(title):
     movie_df['common_movie_raters'] = no_of_rating_for_both_movies 
     results = movie_df[movie_df['common_movie_raters']>=5].reset_index()\
                 .merge(movie_ratings, how='inner', on ='movieId')\
-                .groupby(['movieId','title']).agg({'rating':'mean', 'common_movie_raters' : 'mean'}).reset_index()\
-                .sort_values('rating', ascending=False).head(25).merge(df, how = 'inner', on = 'title')
+                .groupby(['movieId','title']).agg({'rating':'mean', 'common_movie_raters' : 'sum'}).reset_index()\
+                .sort_values(by=['rating', 'common_movie_raters'], ascending=[False, False]).head(25).merge(df, how = 'inner', on = 'title')
 
     results['rating'] = round(results['rating'], 1)
     return results[['title','rating', 'Poster']].head(5)
