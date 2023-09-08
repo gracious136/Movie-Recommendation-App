@@ -9,12 +9,6 @@ st.title('Meet the Creators of SGM Movies')
 #with col1:
 st.header("Sebastian")
 
-
-image_url = 'https://github.com/gracious136/Movie-Recommendation-App/raw/main/data/seba.png'
-
-# Display the image
-st.image(image_url, format='image/png')
-
 #st.image("https://github.com/gracious136/Movie-Recommendation-App/blob/main/data/seba.jpg")#, output_format ='png')
 st.write('''
    Sebastian is a Junior Data Analyst and a valuable member of the team who contributes greatly to work culture. He is positive and brings this to every project and meeting. His journey into the world of data science is a unique one, having embarked on this path later in life after a successful career running businesses. This background has given Sebastian an all-round business acumen, allowing him to possess an in-depth  understanding of how businesses operate from the ground up.
@@ -24,7 +18,7 @@ Sebastian strength lies with his knack for visualising and presenting data. Tran
 
 #with col2:
 st.header("Mirella")
-st.image("https://github.com/gracious136/Movie-Recommendation-App/blob/main/data/mire.jpg")#, format ='image/png')
+#st.image("https://github.com/gracious136/Movie-Recommendation-App/blob/main/data/mire.jpg")#, format ='image/png')
 st.write('''
 Mirella is our junior Data Analyst who started her career as an Executive Personal Assistant. She worked in tandem with some of the best CEOs in Germany. It was in this world she harnessed her remarkable organisational & analytical skills. This grounding has made her excellent in spotting and uncovering valuable insights in data sets. Her attention to detail allowed her to see anomalies and discrepancies within the data that go unnoticed by others.
 Mirella's critical thinking enables her to delve deeper into the data, constantly asking probing questions to understand the underlying trends and correlations. Using her research skills she effortlessly gathers additional domain context from the ever complex and comprehensive ‘internet of things’. In her role, Mirella's passion for seeking answers and her unwavering dedication to precision makes her an invaluable asset. She also brings and gentleness and kindness in the way she interacts with others, that creates a calming atmosphere even in the most stressful times.''')
@@ -32,7 +26,8 @@ Mirella's critical thinking enables her to delve deeper into the data, constantl
 
 
 st.header("Grace")
-st.image("https://github.com/gracious136/Movie-Recommendation-App/blob/main/data/grace.jpg", output_format ='JPEG')
+st.markdown("[LinkedIn](https://www.linkedin.com/in/onyinye-grace-ejimkonye/)")
+#st.image("https://github.com/gracious136/Movie-Recommendation-App/blob/main/data/grace.jpg", output_format ='JPEG')
 st.write('''
    Grace, our Senior Data Scientist is a true expert all aspects of the field. Her coding speed is nothing short of astonishing. When faced with new challenges, she exhibited a remarkable ability to not just pick them up quickly but also grapple with them in a way that left others inspired. Grace thrived in the dynamic world of data, her mind agile and adaptable, always ready to embrace the next big puzzle.
 What really set Grace apart is her selflessness and willingness to bring the whole team along with her. This is innate ability and the motivation for which, is not the success of the project alone Whenever someone in the team needed assistance, she would step in with unwavering patience and a genuine desire to ensure they understood. Grace had a unique talent for explaining complex concepts thoroughly and repeatedly, using different angles and analogies until those concepts became crystal clear for her peers.
