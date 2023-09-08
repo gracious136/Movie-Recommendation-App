@@ -25,7 +25,7 @@ Mirella's critical thinking enables her to delve deeper into the data, constantl
 
 with col3:
    st.header("Grace")
-   st.image("https://github.com/gracious136/Movie-Recommendation-App/blob/main/data/grace.png")#, format ='image/png')
+   st.image("https://github.com/gracious136/Movie-Recommendation-App/blob/main/data/grace.png", format ='PNG')
    st.write('''
    Grace, our Senior Data Scientist is a true expert all aspects of the field. Her coding speed is nothing short of astonishing. When faced with new challenges, she exhibited a remarkable ability to not just pick them up quickly but also grapple with them in a way that left others inspired. Grace thrived in the dynamic world of data, her mind agile and adaptable, always ready to embrace the next big puzzle.
 What really set Grace apart is her selflessness and willingness to bring the whole team along with her. This is innate ability and the motivation for which, is not the success of the project alone Whenever someone in the team needed assistance, she would step in with unwavering patience and a genuine desire to ensure they understood. Grace had a unique talent for explaining complex concepts thoroughly and repeatedly, using different angles and analogies until those concepts became crystal clear for her peers.
