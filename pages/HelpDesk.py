@@ -6,7 +6,7 @@ st.title("SMG HelpDesk")
 st.chat_message("user", avatar = "😎").markdown("Welcome to SMG Movies")
 
 responses = {
-    "What is your name?": "I am SeGreLa, your movie recommendation assistant. How can i help you today?",
+    "What is your name?": "I am SeGreLa, from SEbastian GRacE and mireLA. I am your movie recommendation assistant",
     "hi": "Hi, i am SeGreLa, your movie recommendation assistant. How can i help you today?",
     "Hi": "Hi, i am SeGreLa, your movie recommendation assistant. How can i help you today?",
     "hey": "Hi, i am SeGreLa, your movie recommendation assistant. How can i help you today?",
