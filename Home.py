@@ -67,7 +67,7 @@ def top_popular_movies():
     
     # average_ratings['popularity_score'] = (average_ratings['average_rating']*0.4 + average_ratings['number_of_ratings']*0.6) / (average_ratings['average_rating'] + average_ratings['number_of_ratings'])
     
-    result = average_ratings.loc[average_ratings['average_rating']>=4.5][['title', 'average_rating']].head(25).merge(df, how = 'inner', on = 'title')
+    result = average_ratings.loc[average_ratings['average_rating']>=4][['title', 'average_rating']].head(25).merge(df, how = 'inner', on = 'title')
     result['average_rating'] = round(result['average_rating'], 1)
     return result[['title', 'average_rating', 'Poster']].head(5)
 
@@ -96,7 +96,7 @@ def related_movies(title):
     results = movie_df[movie_df['common_movie_raters']>=0].reset_index()\
                 .merge(movie_ratings, how='inner', on ='movieId')\
                 .groupby(['movieId','title']).agg({'rating':'mean', 'common_movie_raters' : 'mean'}).reset_index()\
-                .sort_values('rating', ascending=False).head(70).merge(df, how = 'inner', on = 'title')
+                .sort_values('rating', ascending=False).head(15).merge(df, how = 'inner', on = 'title')
 
     results['rating'] = round(results['rating'], 1)
     return results[['title','rating', 'Poster']].head(5)
